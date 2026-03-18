@@ -114,10 +114,10 @@ export default function App() {
             gl={{ antialias: true, alpha: true }}
             style={{ background: 'transparent' }}
           >
-            <ambientLight intensity={0.3} color="#c8f0e8" />
-            <directionalLight position={[3, 5, 3]} intensity={0.6} color="#e0f0ff" />
-            <directionalLight position={[-3, 2, -2]} intensity={0.3} color="#f0e8ff" />
-            <pointLight position={[0, 3, 2]} intensity={0.4} color="#ffffff" />
+            <ambientLight intensity={1.2} color="#dff0ff" />
+            <directionalLight position={[4, 6, 4]} intensity={2.2} color="#ffffff" />
+            <directionalLight position={[-4, 3, -3]} intensity={1.2} color="#c8e8ff" />
+            <pointLight position={[0, 3, 2]} intensity={1.5} color="#ffffff" /><pointLight position={[-3, 2, 2]} intensity={0.8} color="#c8f0ff" /><pointLight position={[3, 2, 2]} intensity={0.8} color="#f0f8ff" />
             <Stars radius={80} depth={40} count={800} factor={2} saturation={0.2} fade />
             <GlassAvatar score={overall} />
             <OrbitControls
