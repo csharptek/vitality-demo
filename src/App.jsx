@@ -110,7 +110,7 @@ export default function App() {
           </div>
 
           <Canvas
-            camera={{ position: [0, 0.5, 4.2], fov: 42 }}
+            camera={{ position: [0, 0.55, 6.5], fov: 38 }}
             gl={{ antialias: true, alpha: true }}
             style={{ background: 'transparent' }}
           >
@@ -123,7 +123,9 @@ export default function App() {
             <GlassAvatar score={overall} />
             <OrbitControls
               enablePan={false}
-              enableZoom={false}
+              enableZoom={true}
+              minDistance={4}
+              maxDistance={9}
               minPolarAngle={Math.PI / 3}
               maxPolarAngle={Math.PI / 1.8}
               autoRotate={false}
