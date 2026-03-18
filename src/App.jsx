@@ -119,6 +119,7 @@ export default function App() {
             <directionalLight position={[-4, 3, -3]} intensity={1.2} color="#c8e8ff" />
             <pointLight position={[0, 3, 2]} intensity={1.5} color="#ffffff" /><pointLight position={[-3, 2, 2]} intensity={0.8} color="#c8f0ff" /><pointLight position={[3, 2, 2]} intensity={0.8} color="#f0f8ff" />
             <Stars radius={80} depth={40} count={800} factor={2} saturation={0.2} fade />
+            <Environment preset="city" />
             <GlassAvatar score={overall} />
             <OrbitControls
               enablePan={false}
